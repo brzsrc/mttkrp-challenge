@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.16)
+project(mttkrp C)
+
+set(CMAKE_C_STANDARD 99)
+add_definitions(-DPASTA_USE_OPENMP)
+add_definitions(-D_GNU_SOURCE)
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS} -g -fopenmp -lm -mavx -O0")
+set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS} -fopenmp -lm -mavx -O1")
+set(CMAKE_C_FLAGS_FAST "${CMAKE_C_FLAGS} -fopenmp -lm -mavx -O3")
+add_executable(mttkrp main.c sptensor.c structs.h vector.c vector.h types.h error.h sptensors.h helper_funcs.h load.c matricies.h matrix.c status.c mttkrp.c mttkrp_omp.c timer.c matrix_dump.c error.c base.c)
+target_link_libraries(mttkrp m)
