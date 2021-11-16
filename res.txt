@@ -1,0 +1,52 @@
+./mttkrp -i ./tensors/vast-2015-mc1-5d.tns -o output.txt -v validOutput.txt
+[Average CooMTTKRP]: 4.965364885 s
+Performance: 0.42 GFlop/s, Bandwidth: 0.13 GB/s
+
+
+
+1:
+[Average CooMTTKRP]: 7.272527316 s
+Performance: 0.29 GFlop/s, Bandwidth: 0.09 GB/s
+
+2:
+[Average CooMTTKRP]: 4.297290831 s
+Performance: 0.48 GFlop/s, Bandwidth: 0.15 GB/s
+
+4:
+[Average CooMTTKRP]: 2.319512534 s
+Performance: 0.90 GFlop/s, Bandwidth: 0.27 GB/s
+
+
+nthreads: 8
+[Average CooMTTKRP]: 1.670813299 s
+Performance: 1.25 GFlop/s, Bandwidth: 0.38 GB/s
+
+
+16:
+[Average CooMTTKRP]: 1.476327509 s
+Performance: 1.41 GFlop/s, Bandwidth: 0.43 GB/s
+
+24:
+[Average CooMTTKRP]: 1.435598781 s
+Performance: 1.45 GFlop/s, Bandwidth: 0.44 GB/s
+
+26:
+[Average CooMTTKRP]: 1.447009764 s
+Performance: 1.44 GFlop/s, Bandwidth: 0.44 GB/s
+
+28:
+[Average CooMTTKRP]: 1.461485766 s
+Performance: 1.42 GFlop/s, Bandwidth: 0.44 GB/s
+
+30:
+
+
+32:
+
+
+48:
+[Average CooMTTKRP]: 1.461485766 s
+Performance: 1.42 GFlop/s, Bandwidth: 0.44 GB/s
+
+
+

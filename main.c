@@ -161,7 +161,8 @@ int main(int argc, char ** argv)
 #ifdef PASTA_USE_OPENMP
 		#pragma omp parallel
         {
-            nthreads = omp_get_num_threads();
+            // nthreads = omp_get_num_threads();
+			nthreads = 2 ;
         }
         printf("\nnthreads: %d\n", nthreads);
         sptAssert(sptOmpMTTKRP(&X, U, mats_order, mode, nthreads) == 0);

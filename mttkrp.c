@@ -51,7 +51,7 @@ int sptMTTKRP(sptSparseTensor const * const X,
 	}
 
 	sptNnzIndex const nnz = X->nnz;
-	sptIndex const * const ndims = X->ndims;
+	sptIndex const * const ndims = X->ndims; 
 	sptValue const * const restrict vals = X->values.data;
 	sptIndex const stride = mats[0]->stride;
 	sptValueVector scratch;  // Temporary array
